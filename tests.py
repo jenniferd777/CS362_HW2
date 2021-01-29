@@ -27,31 +27,31 @@ class TestCase(unittest.TestCase):
     def test3(self):
         # Test for value 46, Test False for first If statement,
         # True for first elif statement, False for if statement
-        self.assertTrue(contrived_func(46),
+        self.assertTrue(contrived_func(40),
                          msg='contrived_func()'.format())
 
     def test4(self):
         # Test for value 19, Test False for first If statement,
         # False for first elif statement, True for second elif statement
-        self.assertTrue(contrived_func(19),
+        self.assertTrue(contrived_func(80),
                          msg='contrived_func()'.format())
 
     def test5(self):
         # Test for value 47, Test False for first If statement,
         # False for first elif statement, True for second elif statement
-        self.assertTrue(contrived_func(47),
+        self.assertFalse(contrived_func(81),
                          msg='contrived_func()'.format())
 
     def test6(self):
         # Test for value 150, Test False for first If statement,
         # False for first elif statement, True for second elif statement
-        self.assertTrue(contrived_func(150),
+        self.assertTrue(contrived_func(90),
                          msg='contrived_func()'.format())
 
     def test7(self):
         # Test for value 150, Test False for first If statement,
         # False for first elif statement, False for second elif statement
-        self.assertFalse(contrived_func(151),
+        self.assertTrue(contrived_func(50),
                          msg='contrived_func()'.format())
 
 
