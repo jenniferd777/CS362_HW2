@@ -15,7 +15,7 @@ class TestCase(unittest.TestCase):
     def test1(self):
         # Test for value in range of 101 and 149
         # Test True for first If statement
-        self.assertFalse(contrived_func(101),
+        self.assertTrue(contrived_func(101),
                          msg='contrived_func()'.format())
 
     def test2(self):
@@ -27,7 +27,7 @@ class TestCase(unittest.TestCase):
     def test3(self):
         # Test for value 46, Test False for first If statement,
         # True for first elif statement, False for if statement
-        self.assertFalse(contrived_func(46),
+        self.assertTrue(contrived_func(46),
                          msg='contrived_func()'.format())
 
     def test4(self):
@@ -51,7 +51,7 @@ class TestCase(unittest.TestCase):
     def test7(self):
         # Test for value 150, Test False for first If statement,
         # False for first elif statement, False for second elif statement
-        self.assertTrue(contrived_func(151),
+        self.assertFalse(contrived_func(151),
                          msg='contrived_func()'.format())
 
 
